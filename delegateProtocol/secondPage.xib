@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="secondPage">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S7P-l9-wXF">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ba-Au-RaA">
+                            <rect key="frame" x="50" y="165" width="275" height="50"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="fz6-Ne-B11"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                            <state key="normal" title="Button One ">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="onePressed:" destination="-1" eventType="touchUpInside" id="79W-LT-ya1"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9be-zF-GrG">
+                            <rect key="frame" x="50" y="377" width="275" height="50"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="J0d-78-Wqq"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                            <state key="normal" title="Button Two">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="twoPressed:" destination="-1" eventType="touchUpInside" id="Tua-Cu-X4c"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <constraints>
+                        <constraint firstItem="9be-zF-GrG" firstAttribute="top" secondItem="8ba-Au-RaA" secondAttribute="bottom" constant="162" id="9hc-Kz-DFv"/>
+                        <constraint firstAttribute="trailing" secondItem="8ba-Au-RaA" secondAttribute="trailing" constant="50" id="Vnm-K7-Vn2"/>
+                        <constraint firstItem="8ba-Au-RaA" firstAttribute="leading" secondItem="S7P-l9-wXF" secondAttribute="leading" constant="50" id="cYg-gg-0xA"/>
+                        <constraint firstAttribute="trailing" secondItem="9be-zF-GrG" secondAttribute="trailing" constant="50" id="eaR-27-UYb"/>
+                        <constraint firstItem="8ba-Au-RaA" firstAttribute="top" secondItem="S7P-l9-wXF" secondAttribute="top" constant="165" id="hId-ZF-5MA"/>
+                        <constraint firstItem="9be-zF-GrG" firstAttribute="leading" secondItem="S7P-l9-wXF" secondAttribute="leading" constant="50" id="hwt-It-cqt"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="S7P-l9-wXF" firstAttribute="bottom" secondItem="Q5M-cg-NOt" secondAttribute="bottom" id="aCN-kA-zKM"/>
+                <constraint firstItem="S7P-l9-wXF" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="gNB-09-NHu"/>
+                <constraint firstItem="S7P-l9-wXF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="u64-K9-gw7"/>
+                <constraint firstItem="S7P-l9-wXF" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="w9e-ij-wX3"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="130.40000000000001" y="152.47376311844079"/>
+        </view>
+    </objects>
+</document>
